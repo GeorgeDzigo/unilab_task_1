@@ -13,17 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/news', function () {
-    return view("content.news");
-})->name("news");
+Route::get('/news', fn() => view("news"));
 
-Route::get("/news/{id}", function($id) {
-    return view("content.newsid", ["id" => $id]);
-});
+Route::get('/news/{id}', fn($id) => view("newsid", ["id" => $id]));
 
-Route::get("/other", function() {
-    return redirect(route("news"));
-});
-Route::get('/404', function() {
-    return abort(404, "Page not found");
-});
+Route::get('/other', fn() => redirect("/news"));
+
+Route::get('/404', fn() => abort(404));

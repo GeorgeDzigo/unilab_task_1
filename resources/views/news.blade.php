@@ -7,6 +7,6 @@
     <title>TASK</title>
 </head>
 <body>
-    @yield('content')
+    <h1>NEWS</h1>
 </body>
 </html>

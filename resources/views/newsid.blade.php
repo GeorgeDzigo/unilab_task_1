@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>NEWS ID</title>
 </head>
 <body>
-    <h1>{{ $id }}</h1>
-    <a href="{{ route("news") }}">Go Back To News</a>
+    <h1><a href="/news">{{ $id }}</a></h1>
 </body>
 </html>
